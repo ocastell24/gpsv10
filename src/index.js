@@ -3,11 +3,25 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+//import Flota from './Flota';
+import Pantalla22 from './Componentes/Pantallas/Pantalla22';
+//import Reportes from './Reportes';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />} />
+
+        <Route path="pantalla22" element={<Pantalla22 />} />
+
+      </Routes>
+      {/* <App /> */}
+    </BrowserRouter>
+
   </React.StrictMode>
 );
 

@@ -13,7 +13,7 @@ import {
   //        ButtonGroup 
 } from '@aws-amplify/ui-react';
 import Pantalla2 from './Componentes/Pantallas/Pantalla2';
-import awsExports from "./aws-exports";
+import awsExports from './aws-exports';
 
 Amplify.configure(awsExports);
 
