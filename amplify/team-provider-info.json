@@ -13,7 +13,8 @@
     },
     "categories": {
       "auth": {
-        "gpsv10b03790a4": {}
+        "gpsv10b03790a4": {},
+        "true": {}
       }
     }
   }

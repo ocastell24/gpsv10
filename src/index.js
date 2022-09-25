@@ -14,10 +14,8 @@ root.render(
 
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<App />} />
-
         <Route path="pantalla22" element={<Pantalla22 />} />
-
+        <Route path="/" element={<App />} />
       </Routes>
       {/* <App /> */}
     </BrowserRouter>

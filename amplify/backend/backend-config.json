@@ -29,11 +29,27 @@
   },
   "geo": {
     "map0704f914": {
-      "isDefault": true,
+      "isDefault": false,
       "providerPlugin": "awscloudformation",
       "service": "Map",
       "mapStyle": "VectorEsriStreets",
       "accessType": "AuthorizedUsers",
+      "dependsOn": [
+        {
+          "category": "auth",
+          "resourceName": "gpsv10b03790a4",
+          "attributes": [
+            "UserPoolId"
+          ]
+        }
+      ]
+    },
+    "map63961f00": {
+      "isDefault": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Map",
+      "mapStyle": "VectorEsriStreets",
+      "accessType": "AuthorizedAndGuestUsers",
       "dependsOn": [
         {
           "category": "auth",

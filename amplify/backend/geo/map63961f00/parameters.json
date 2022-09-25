@@ -5,7 +5,7 @@
   "unauthRoleName": {
     "Ref": "UnauthRoleName"
   },
-  "mapName": "map0704f914",
+  "mapName": "map63961f00",
   "mapStyle": "VectorEsriStreets",
-  "isDefault": false
+  "isDefault": true
 }
