@@ -13,6 +13,7 @@ import {
     //    components 
 } from '@aws-amplify/ui-react';
 import React from 'react';
+import Pantalla22 from './Pantalla22';
 
 const Styles = {
     container: {
@@ -36,7 +37,19 @@ const Styles = {
 
 function Pantalla2({ signOut, user }) {
     return (
+
+        /*Nuevo codigo para la navegacion */
         <div className='contenedor-Pantalla2'>
+           
+            <div>
+                <nav>
+                    <ol>
+                        <li>
+                            <Link to="/">Menu principal</Link>
+                        </li>
+                    </ol>
+                </nav>
+            </div>
 
             <Flex
                 direction="row"
@@ -55,18 +68,20 @@ function Pantalla2({ signOut, user }) {
                 justifyContent="center"
                 alignItems="center"
             >
-                <Button
-                    onClick={() => alert('Implementar la pagina Flota. Al toque..!')}>
-                    Flota</Button>
+               <Link to="/pantalla21" style={{ textDecoration: 'none' }}>
+                    <Button variation='primary'>
+                        Flota</Button>
+                </Link>
 
                 <Link to="/pantalla22" style={{ textDecoration: 'none' }}>
                     <Button variation='primary'>
                         Vehiculo</Button>
                 </Link>
 
-                <Button
-                    onClick={() => alert('Implementar la pagina Reportes. Al toque..!')}
-                >Reportes</Button>
+                <Link to="/pantalla23" style={{ textDecoration: 'none' }}>
+                    <Button variation='primary'>
+                        Reportes</Button>
+                </Link>
 
             </ButtonGroup>
         </div >
