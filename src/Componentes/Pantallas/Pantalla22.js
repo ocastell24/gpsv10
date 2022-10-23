@@ -45,7 +45,7 @@ function Pantalla22() {
   }, []);
 */
   return (
-   <p>hola2</p>
+   <p>hola3</p>
   );
 
 
