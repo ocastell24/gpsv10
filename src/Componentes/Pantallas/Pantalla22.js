@@ -22,7 +22,7 @@ Amplify.configure(awsExports);
 
 function Pantalla22() {
 
-  const mapRef = useRef(null);
+ // const mapRef = useRef(null);
 /*
   useEffect(() => {
     let map: maplibregl.Map;
@@ -45,7 +45,7 @@ function Pantalla22() {
   }, []);
 */
   return (
-    <div ref={mapRef} id="map" />
+   <p>hola</p>
   );
 
 
