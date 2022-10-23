@@ -23,10 +23,10 @@ Amplify.configure(awsExports);
 function Pantalla22() {
 
   const mapRef = useRef(null);
-
+/*
   useEffect(() => {
     let map: maplibregl.Map;
-    
+
     async function initializeMap() {
       if (mapRef.current != null) {
         map = await createMap({
@@ -36,13 +36,14 @@ function Pantalla22() {
         });
       }
     }
+
     initializeMap();
 
     return function cleanup() {
       if (map != null) map.remove();
     };
   }, []);
-
+*/
   return (
     <div ref={mapRef} id="map" />
   );
