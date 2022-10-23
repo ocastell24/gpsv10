@@ -60,13 +60,6 @@ border: solid 1px black;
 
 } 
 
-#map {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-}
-
 .heading {
   margin: 0;
   padding: 0px;

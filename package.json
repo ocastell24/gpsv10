@@ -28,9 +28,7 @@
       "react-app/jest"
     ]
   },
-  "browser": {
-    "child_process": false
-  },
+
 
   "browserslist": {
     "production": [
