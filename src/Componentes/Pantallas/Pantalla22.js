@@ -16,15 +16,17 @@ import "maplibre-gl/dist/maplibre-gl.css";
 import "@maplibre/maplibre-gl-geocoder/dist/maplibre-gl-geocoder.css";
 import "maplibre-gl-js-amplify/dist/public/amplify-geocoder.css";
 import { createMap } from "maplibre-gl-js-amplify";
-
+//import Navbar from './components/navbar.js';
 
 Amplify.configure(awsExports);
 
 function Pantalla22() {
+
   const mapRef = useRef(null);
 
   useEffect(() => {
     let map: maplibregl.Map;
+    
     async function initializeMap() {
       if (mapRef.current != null) {
         map = await createMap({
@@ -41,9 +43,10 @@ function Pantalla22() {
     };
   }, []);
 
-
   return (
     <div ref={mapRef} id="map" />
   );
+
+
 }
 export default Pantalla22;
