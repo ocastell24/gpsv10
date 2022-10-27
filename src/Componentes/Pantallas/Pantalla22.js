@@ -11,19 +11,19 @@ import awsExports from '../../aws-exports';
 //import '@aws-amplify/ui-react/styles.css';
 //import maplibregl from 'maplibre-gl';
 //import AWS from 'aws-sdk';
-//import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 //import "maplibre-gl/dist/maplibre-gl.css";
 //import "@maplibre/maplibre-gl-geocoder/dist/maplibre-gl-geocoder.css";
 //import "maplibre-gl-js-amplify/dist/public/amplify-geocoder.css";
-//import { createMap } from "maplibre-gl-js-amplify";
+import { createMap } from "maplibre-gl-js-amplify";
 //import Navbar from './components/navbar.js';
 
 Amplify.configure(awsExports);
 
 function Pantalla22() {
 
- // const mapRef = useRef(null);
-/*
+  const mapRef = useRef(null);
+
   useEffect(() => {
     let map: maplibregl.Map;
 
@@ -43,9 +43,9 @@ function Pantalla22() {
       if (map != null) map.remove();
     };
   }, []);
-*/
+
   return (
-   <p>hola3</p>
+    <div ref={mapRef} id="map" />
   );
 
 
